@@ -15,7 +15,8 @@ public class MyAccountLoginStepDefinations {
 	public WebDriver driver=null;
 	@Given("^open browser$")
 	public void open_browser() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "C://Selenium\\Chromedriver_win32//chromedriver2.exe");
+		// System.setProperty("webdriver.chrome.driver", "C://Selenium\\Chromedriver_win32//chromedriver2.exe");
+		System.setProperty("webdriver.chrome.driver", "chrome//chromedriver2.exe");
 		driver = new ChromeDriver();  
 		driver.manage().window().maximize();
 	}
