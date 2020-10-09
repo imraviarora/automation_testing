@@ -16,7 +16,8 @@ public class MyAccountLoginStepDefinations {
 	@Given("^open browser$")
 	public void open_browser() throws Throwable {
 		// System.setProperty("webdriver.chrome.driver", "C://Selenium\\Chromedriver_win32//chromedriver2.exe");
-		System.setProperty("webdriver.chrome.driver", "chrome//chromedriver2.exe");
+		System.setProperty("webdriver.chrome.driver", "src//test//java//stepDefinations//chrome//chromedriver2.exe");
+		// java.lang.IllegalStateException: The driver executable does not exist: C:\Program Files\Jenkins\workspace\vinay_code\chrome\chromedriver2.exe
 		driver = new ChromeDriver();  
 		driver.manage().window().maximize();
 	}
